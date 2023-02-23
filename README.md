@@ -11,7 +11,7 @@
 https://github.com/L0vd/Babylon/tree/main/Node_installation_guide
 
 ## :heart: Explorer
-http://explorers.l0vd.com/babylon-testnet
+https://explorers.l0vd.com/babylon-testnet
 
 ## :heart: Monitoring
 https://github.com/L0vd/Babylon/tree/main/Monitoring
