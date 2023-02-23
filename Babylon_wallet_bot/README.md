@@ -31,16 +31,16 @@ To get started, add your wallet address. After that, you will be able to see the
 
 ## Screenshots
 **Start**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/start.png)  
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/start.png)  
 **Token Info**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/token_info.png?raw=true)  
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/token_info.png?raw=true)  
 **Balance Mode**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/balance.png?raw=true)  
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/balance.png?raw=true)  
 **Watchlist Mode**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/watchlist.png?raw=true) 
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/watchlist.png?raw=true) 
 **Validators Mode**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/validators.png)  
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/validators.png)  
 **Proposals Mode**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/proposals.png?raw=true)  
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/proposals.png?raw=true)  
 **Help**  
-![Screenshot](https://github.com/L0vd/screenshots/blob/main/Babylon/help.png?raw=true)
+![Screenshot](https://github.com/L0vd/screenshots/blob/main/nois/help.png?raw=true)
