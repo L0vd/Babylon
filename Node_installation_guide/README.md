@@ -15,7 +15,7 @@
 
 <a name="node_setup"></a>
 # Manual node setup
-If you want to setup Andromeda fullnode manually follow the steps below
+If you want to setup Babylon fullnode manually follow the steps below
 
 ## Update and upgrade
 ```
