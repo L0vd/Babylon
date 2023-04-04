@@ -66,7 +66,7 @@ babylond config chain-id $BABYLON_CHAIN_ID
 
 ## Initialize your node
 ```
-babylond init $NODENAME --chain-id $CHAIN_ID
+babylond init $BABYLON_NODENAME --chain-id $BABYLON_CHAIN_ID
 ```
 
 ## Download genesis
@@ -111,11 +111,15 @@ sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0ubbn\"/" $HOME/.ba
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.babylond/config/config.toml
 ```
 
+## Change btc-network and btc-tag in app.toml file.
+### Values specified here https://github.com/babylonchain/networks/tree/main/bbn-test1
+
+
 ## Create Service
 ```
 sudo tee /etc/systemd/system/babylond.service > /dev/null <<EOF
 [Unit]
-Description=Andromeda
+Description=Babylon
 After=network-online.target
 
 [Service]
@@ -163,7 +167,7 @@ babylond keys add $BABYLON_WALLET --recover
 ### 3. Create validator
 ```
 babylond tx staking create-validator \
---amount 1000000ubbn \
+--amount 1ubbn \
 --commission-max-change-rate "0.01" \
 --commission-max-rate "0.20" \
 --commission-rate "0.1" \
