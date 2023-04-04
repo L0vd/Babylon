@@ -62,6 +62,7 @@ source $HOME/.bash_profile
 ## Configure your node
 ```
 babylond config chain-id $BABYLON_CHAIN_ID
+babylond config keyring-backend test
 ```
 
 ## Initialize your node
@@ -164,9 +165,19 @@ babylond keys add $BABYLON_WALLET --recover
 
 ### 2. Request tokens from [faucet](https://discord.com/channels/1046686458070700112/1075371070493831259)
 
+### 3. Create a BLS key
+```
+babylond create-bls-key $(babylond keys show $BABYLON_WALLET -a)
+```
+
+### 4. Restart your node
+```
+systemctl restart babylond
+```
+
 ### 3. Create validator
 ```
-babylond tx staking create-validator \
+babylond tx checkpointing create-validator \
 --amount 1ubbn \
 --commission-max-change-rate "0.01" \
 --commission-max-rate "0.20" \
@@ -176,7 +187,8 @@ babylond tx staking create-validator \
 --pubkey=$(babylond tendermint show-validator) \
 --moniker $BABYLON_NODENAME \
 --chain-id $BABYLON_CHAIN_ID \
---gas-prices 0.025ubbn \
+--fees=0ubbn\
+--keyring-backend=test \
 --from $BABYLON_WALLET \
 --yes
 ```
