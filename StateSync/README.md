@@ -20,7 +20,7 @@ s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.babylond/config/config.toml
 
-peers="c2bc08c7b0292f7072b1530ffc03ebf69563f518@95.216.39.183:27656" \
+peers="503bbb5a059465d22fcd4706609f5fd72e69dba3@65.109.70.45:17656" \
 && sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.babylond/config/config.toml 
 
 babylond tendermint unsafe-reset-all --home ~/.babylond && sudo systemctl restart babylond && \
