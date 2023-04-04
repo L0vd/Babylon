@@ -175,7 +175,7 @@ babylond create-bls-key $(babylond keys show $BABYLON_WALLET -a)
 systemctl restart babylond
 ```
 
-### 3. Create validator
+### 5. Create validator
 ```
 babylond tx checkpointing create-validator \
 --amount 1ubbn \
